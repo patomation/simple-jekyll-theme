@@ -1,19 +1,11 @@
-body {
-    color: $body-color ;
-    background-color: $body-background-color ;
+.highlighter-rouge{
+  color: $highlighter-rouge-color !important;
 }
 
-
-header {
-    color: $header-color;
-    background: $header-background-color ;
+a{
+  color: $a-color !important;
 }
 
-
-pre code {
-  color: $code-color !important;
-  background: $code-background-color;
-  border: 1px solid $code-border-color;
-  display: block;
-  padding: 20px;
+a.hover{
+  color: $a-hover-color !important;
 }

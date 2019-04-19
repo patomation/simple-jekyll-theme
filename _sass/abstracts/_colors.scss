@@ -4,18 +4,17 @@ $black: #000000;
 
 
 //Solarized Colors
-$base03:        #002b36;
-$base02:        #073642;
-$base01:        #586e75;
-$base00:        #657b83;
-$base0:         #839496;
-$base1:         #93a1a1;
-$base2:         #eee8d5;
-$base3:         #fdf6e3;
+$base03:        #002b36; // Dark Blue
+$base02:        #073642; // Less Dark Blue
+$base01:        #586e75; // Light Blue
+$base00:        #657b83; // Light light Blue
+$base0:         #839496; // Light light light Blue
+$base1:         #93a1a1; // Lighter light Blue
+$base2:         #eee8d5; // Light Yellow
+$base3:         #fdf6e3; // Lighter Yellow
 
 $background: $base03;
 $foreground: $base0;
-$fadeColor:  $base03;
 
 
 $yellow:        #b58900;
@@ -27,23 +26,36 @@ $blue:          #268bd2;
 $cyan:          #2aa198;
 $green:         #859900;
 
-$primary: $base02;
-$primary-rgb: rgba( 176,163,83, .9);
-$secondary: $green;
-$secondary-dark: $cyan;
 
-
-//Layout Colors
-$body-background-color: $base03;
+//BODY
 $body-color: $base2;
+$body-background-color: $background;
 
-$header-color: $white;
-$header-background-color: $primary;
+// HEADER
+$header-color: $base01;
+$header-background-color: $base02;
 
-$footer-background-color: $black;
-$footer-color: $white;
+// NAVIGATION
+$nav-background-color: $green;
+$nav-a-background-color: $green;
+$nav-a-color: $base2;
+$nav-a-hover-background-color: $magenta;
+$nav-a-hover-color: $green;
+$nav-a-active-background-color: $magenta;
+$nav-a-active-color: $green;
 
+// CODE BLOCKS
+$code-color: $base03;
+$code-background-color: $base00;
+$code-border-color: $base1;
 
-$code-color: $white;
-$code-background-color: $black;
-$code-border-color: $white;
+// HIGHLIGHTED
+$highlighter-rouge-color: $orange;
+
+// LINKS
+$a-color: $magenta;
+$a-hover-color: $magenta;
+
+// FOOTER
+$footer-color: $base01;
+$footer-background-color: $base02;

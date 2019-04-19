@@ -1,52 +1,45 @@
-
-@media(min-width:768px) {
-    .navbar-fixed-top {
-        padding: 25px 0;
-        -webkit-transition: padding .3s;
-        -moz-transition: padding .3s;
-        transition: padding .3s;
-    }
-
-    .navbar-fixed-top .navbar-brand {
-        font-size: 2em;
-        -webkit-transition: all .3s;
-        -moz-transition: all .3s;
-        transition: all .3s;
-    }
-
-    .navbar-fixed-top.navbar-shrink {
-        padding: 10px 0;
-    }
-
-    .navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
-    }
+nav {
+  background-color: $nav-background-color;
+  padding-right: 20px;
+  padding-left: 15px;
 }
 
-.navbar {
-    text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
+nav .logo{
+  display: inline-block;
+  float: left;
+  padding: 10px
 }
 
-.navbar a:focus {
-    outline: 0;
+nav ul {
+  list-style: none;
+  text-align: right;
+  padding: 0;
+  margin: 0;
 }
 
-.navbar .navbar-nav {
-    letter-spacing: 1px;
+nav li {
+  // height: 50px;
+  // line-height: 50px;
+  display: inline-block;
+  margin-right: -4px;
 }
 
-.navbar .navbar-nav li a:focus {
-    outline: 0;
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: $nav-a-background-color !important;
+  color: $nav-a-color !important;
+  padding: 10px;
 }
 
-.navbar-default,
-.navbar-inverse {
-    border: 0;
+nav a:hover {
+    background-color: $nav-a-hover-background-color !important;
+    color: $nav-a-hover-color !important;
+    text-decoration: none;
 }
 
-
-.navbar-nav>.active>a {
-    background-color: $secondary-dark !important;
+nav a.active {
+  background-color: $nav-a-active-background-color !important;
+  color: $nav-a-active-color !important;
+  cursor: default;
 }
