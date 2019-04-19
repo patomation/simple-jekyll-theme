@@ -1,19 +1,38 @@
 # simple-jekyll-theme
 
 
+## TO UE AS A Remote Theme :
+[Remote Theme Plugin](#)
+
+Add this line to your Jekyll site's `_config.yml`:
+
+```yaml
+
+plugins:
+  -jekyll-remote-theme
+
+remote theme: patomation/simple-jekyll-theme
+
+```
+Add this to gem tile:
+```
+gem "jekyll-remote-theme"
+```
+
+
 
 ## Installation
 
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "simple-jekyll-theme-temp"
+gem "simple-jekyll-theme"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: simple-jekyll-theme-temp
+theme: simple-jekyll-theme
 ```
 
 And then execute:
@@ -22,7 +41,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install simple-jekyll-theme-temp
+    $ gem install simple-jekyll-theme
 
 ## Usage
 
