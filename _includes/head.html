@@ -8,6 +8,8 @@
 
   <link rel="stylesheet" href="{{ "/assets/css/styles.css" }}">
 
+  <script src="{{ base.url | prepend: site.url }}/assets/js/vendor/bootstrap.min.js"></script>
+
   {%- feed_meta -%}
 
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
