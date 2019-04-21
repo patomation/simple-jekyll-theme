@@ -1,61 +1,121 @@
-// colors
-$white: #ffffff;
-$black: #000000;
+
+// Solarized Blue
+$blue-600:        #002b36; // Dark Blue
+$blue-500:        #073642; // Less Dark Blue
+$blue-400:        #586e75; // Light Blue
+$blue-300:        #657b83; // Light light Blue
+$blue-200:        #839496; // Light light light Blue
+$blue-100:        #93a1a1; // Lighter light Blue
+
+// Solarized Light Yellow
+$light-yellow:    #eee8d5; // Light Yellow
+$lighter-yellow:  #fdf6e3; // Lighter Yellow
+
+// Bootstrap Color system
+$white:    #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:    #000;
+
+$grays: (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+);
+
+$blue:    #268bd2; //Solarized
+$indigo:  #6610f2; // Bootstrap
+$purple:  #6f42c1; // Bootstrap
+$pink:    #e83e8c; // Bootstrap
+$red:     #dc322f; //Solarized
+$orange:  #cb4b16; //Solarized
+$yellow:  #b58900; //Solarized
+$green:   #859900; //Solarized
+$teal:    #20c997; // Bootstrap
+$cyan:    #2aa198; //Solarized
+$violet:  #6c71c4; //Solarized
+$magenta: #d33682; //Solarized
+
+$colors: (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+);
+
+$primary:       $green;
+$secondary:     $blue;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $blue-100;
+$dark:          $blue-600;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
 
 
-//Solarized Colors
-$base03:        #002b36; // Dark Blue
-$base02:        #073642; // Less Dark Blue
-$base01:        #586e75; // Light Blue
-$base00:        #657b83; // Light light Blue
-$base0:         #839496; // Light light light Blue
-$base1:         #93a1a1; // Lighter light Blue
-$base2:         #eee8d5; // Light Yellow
-$base3:         #fdf6e3; // Lighter Yellow
+// HTML COLOR VARIABLES
+$body-bg:             theme-color('dark');
+$body-color:          theme-color('light');
 
-$background: $base03;
-$foreground: $base0;
+$main-bg:             theme-color('dark');
 
+$header-color:        theme-color('light');
 
-$yellow:        #b58900;
-$orange:        #cb4b16;
-$red:           #dc322f;
-$magenta:       #d33682;
-$violet:        #6c71c4;
-$blue:          #268bd2;
-$cyan:          #2aa198;
-$green:         #859900;
+$link-color:          theme-color("primary");
+$link-hover-color:    darken($link-color, 15%);
+
+$code-color: theme-color('light') !important;
+$code-bg: darken(theme-color('primary'), 15%);
 
 
-//BODY
-$body-color: $base2;
-$body-background-color: $background;
 
-// HEADER
-$header-color: $base01;
-$header-background-color: $base02;
+// HTML ELEMENT COLORS
+nav{
+  @include gradient(theme-color('primary'),darken(theme-color('secondary'), 30%));
+  filter: drop-shadow(0 0.25rem 0.15rem rgba(theme-color('dark'),0.5));
+}
 
-// NAVIGATION
-$nav-background-color: $green;
-$nav-a-background-color: $green;
-$nav-a-color: $base2;
-$nav-a-hover-background-color: $magenta;
-$nav-a-hover-color: $green;
-$nav-a-active-background-color: $magenta;
-$nav-a-active-color: $green;
+header{
+  color: $header-color;
+}
 
-// CODE BLOCKS
-$code-color: $base03;
-$code-background-color: $base00;
-$code-border-color: $base1;
+main{
+  background-color: $main-bg;
+}
 
-// HIGHLIGHTED
-$highlighter-rouge-color: $orange;
-
-// LINKS
-$a-color: $magenta;
-$a-hover-color: $magenta;
-
-// FOOTER
-$footer-color: $base01;
-$footer-background-color: $base02;
+code{
+  background-color: $code-bg;
+}
