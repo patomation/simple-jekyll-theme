@@ -1,45 +1,28 @@
+.navbar-brand{
+    // padding-left: 20px;
+    // padding-right: 20px;
+}
+
+.navbar-toggler{
+  float: right;
+}
+
+
 nav {
   background-color: $nav-background-color;
-  padding-right: 20px;
-  padding-left: 15px;
-}
-
-nav .logo{
-  display: inline-block;
-  float: left;
-  padding: 10px
-}
-
-nav ul {
-  list-style: none;
-  text-align: right;
-  padding: 0;
-  margin: 0;
-}
-
-nav li {
-  // height: 50px;
-  // line-height: 50px;
-  display: inline-block;
-  margin-right: -4px;
 }
 
 nav a {
-  display: inline-block;
-  text-decoration: none;
   background-color: $nav-a-background-color !important;
   color: $nav-a-color !important;
-  padding: 10px;
 }
 
 nav a:hover {
     background-color: $nav-a-hover-background-color !important;
     color: $nav-a-hover-color !important;
-    text-decoration: none;
 }
 
 nav a.active {
   background-color: $nav-a-active-background-color !important;
   color: $nav-a-active-color !important;
-  cursor: default;
 }
