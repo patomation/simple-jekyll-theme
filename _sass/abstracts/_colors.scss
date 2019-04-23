@@ -100,7 +100,8 @@ $link-hover-color:    darken($link-color, 15%);
 $code-color: theme-color('light') !important;
 $code-bg: darken(theme-color('primary'), 15%);
 
-
+$footer-color: $blue-600;
+$footer-bg: $blue-400;
 
 // HTML ELEMENT COLORS
 nav{
@@ -118,4 +119,9 @@ main{
 
 code{
   background-color: $code-bg;
+}
+
+footer{
+  color: $footer-color;
+  background-color: $footer-bg;
 }
