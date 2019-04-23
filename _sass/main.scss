@@ -1,11 +1,14 @@
-@import 'vendors/bootstrap/bootstrap';
+//Import required parts of bootstrap
+@import 'vendors/bootstrap_required';
 
-
+//Customize things
 @import 'abstracts/variables';
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
 @import 'abstracts/colors';
 
+//Import The rest of Boostrap parts
+@import 'vendors/bootstrap_custom';
 
 
 @import 'base/typography';
@@ -25,6 +28,7 @@
 @import 'components/body';
 @import 'components/main';
 @import 'components/code';
+@import 'components/full-page-background';
 
 @import 'pages/home';
 @import 'pages/about';

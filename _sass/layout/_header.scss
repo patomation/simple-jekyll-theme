@@ -1,16 +1,12 @@
 header {
     text-align: center;
-    color: $header-color;
-    background: $header-background-color ;
-    padding: 50px;
+    height: 100%;
+    padding: 2rem;
 }
 
-header .container {
-    padding-top: 100px;
-    padding-bottom: 50px;
-}
-
-header img {
-    display: block;
-    margin: 0 auto 20px;
+header span {
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
