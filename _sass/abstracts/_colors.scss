@@ -104,10 +104,15 @@ $code-bg: darken(theme-color('primary'), 15%);
 $footer-color: theme-color('light');
 $footer-bg: darken( theme-color('dark'), 5%);
 
+$border-color: theme-color('light');
+$shadow-color: darken(theme-color('dark'), 5%);
+
+
+
 // HTML ELEMENT COLORS
 nav{
   @include gradient(theme-color('primary'),darken(theme-color('secondary'), 30%));
-  filter: drop-shadow(0 0.25rem 0.15rem rgba(theme-color('dark'),0.5));
+  @include drop-shadow-bottom($shadow-color);
 }
 
 header{
