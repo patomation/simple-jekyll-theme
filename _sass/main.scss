@@ -10,11 +10,11 @@
 //Import The rest of Boostrap parts
 @import 'vendors/bootstrap_custom';
 
-
+//BASE
 @import 'base/typography';
 @import 'base/reset'; //my custom browser/bootstrap resets
 
-
+// Layout
 @import 'layout/navigation';
 @import 'layout/grid';
 @import 'layout/header';
@@ -22,21 +22,27 @@
 @import 'layout/sidebar';
 @import 'layout/forms';
 
+//Components
 @import 'components/buttons';
 @import 'components/carousel';
 @import 'components/slider';
-@import 'components/body';
-@import 'components/main';
-@import 'components/code';
-@import 'components/full-page-background';
-@import 'components/profile-image';
-@import 'components/category';
 @import 'components/projects';
+@import 'components/full-page-background';
 
+//Classes
+@import 'classes/body';
+@import 'classes/main';
+@import 'classes/section';
+@import 'classes/code';
+@import 'classes/profile-image';
+@import 'classes/category';
+
+//Pages
 @import 'pages/home';
 @import 'pages/about';
 @import 'pages/contact';
 @import 'pages/blog';
 
+// Themes
 @import 'themes/theme';
 @import 'themes/admin';

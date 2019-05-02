@@ -82,7 +82,8 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "darker":     darken($dark, 5%)
 );
 
 
@@ -93,7 +94,7 @@ $body-color:          theme-color('light');
 $main-bg:             theme-color('dark');
 
 $header-color:        theme-color('light');
-$header-bg:           darken( theme-color('dark'), 5%);
+$header-bg:           theme-color('dark');
 
 $link-color:          theme-color("primary");
 $link-hover-color:    darken($link-color, 15%);
@@ -102,14 +103,26 @@ $code-color: theme-color('light') !important;
 $code-bg: darken(theme-color('primary'), 15%);
 
 $footer-color: theme-color('light');
-$footer-bg: darken( theme-color('dark'), 5%);
+$footer-bg: theme-color('darker');
 
 $border-color: theme-color('light');
 $shadow-color: darken(theme-color('dark'), 5%);
 
-
-
 // HTML ELEMENT COLORS
+.light{
+  color: theme-color('dark');
+  background-color: theme-color('light');
+}
+.dark{
+  color: theme-color('light');
+  background-color: theme-color('dark');
+}
+.darker{
+  color: theme-color('light');
+  background-color: theme-color('darker');
+}
+
+
 nav{
   @include gradient(theme-color('primary'),darken(theme-color('secondary'), 30%));
   @include drop-shadow-bottom($shadow-color);

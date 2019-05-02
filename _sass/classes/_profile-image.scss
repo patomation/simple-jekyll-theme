@@ -1,0 +1,10 @@
+.profile-image{
+  border-radius: 50%;
+  max-width: 50%;
+  @include media-breakpoint-up(lg) {
+    width: 25%
+  }
+  @include media-breakpoint-up(md) {
+    width: 25%
+  }
+}
