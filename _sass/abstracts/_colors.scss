@@ -93,6 +93,7 @@ $body-color:          theme-color('light');
 $main-bg:             theme-color('dark');
 
 $header-color:        theme-color('light');
+$header-bg:           darken( theme-color('dark'), 5%);
 
 $link-color:          theme-color("primary");
 $link-hover-color:    darken($link-color, 15%);
@@ -100,8 +101,8 @@ $link-hover-color:    darken($link-color, 15%);
 $code-color: theme-color('light') !important;
 $code-bg: darken(theme-color('primary'), 15%);
 
-$footer-color: $blue-600;
-$footer-bg: $blue-400;
+$footer-color: theme-color('light');
+$footer-bg: darken( theme-color('dark'), 5%);
 
 // HTML ELEMENT COLORS
 nav{
@@ -111,6 +112,10 @@ nav{
 
 header{
   color: $header-color;
+  background-color: $header-bg;
+}
+.profile-image{
+  border: theme-color('light') solid 2px;
 }
 
 main{
