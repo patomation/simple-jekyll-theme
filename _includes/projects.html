@@ -5,18 +5,19 @@
        {% if post.path contains 'projects' %}
          <div class="project col-lg-6 col-md-6 col-sm">
            <div class="image">
-             <a href="{{post.demo-link}}">
-               <img src="assets/images/{{ post.image }}" />
+             <a href="{{post.demo-link}}" target="_blank">
+               <img src="{{ post.image }}" />
              </a>
            </div>
            <div class="description">
              <h2>
                {{ post.title }}
-               <a href="{{ post.repo-link }}">
+               <a href="{{ post.repo-link }}" target="_blank">
                  <i class="fab fa-github">
                  </i>
                </a>
              </h2>
+             <p>{{ post.description }}</p>
              {% for category in post.categories %}
                 <span class="category">{{ category }}</span>
              {% endfor %}
