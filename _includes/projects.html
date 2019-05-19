@@ -5,9 +5,15 @@
        {% if post.path contains 'projects' %}
          <div class="project col-lg-6 col-md-6 col-sm">
            <div class="image rectangle-image">
-             <a href="{{post.demo-link}}" target="_blank">
-               <img src="{{ post.image }}" />
-             </a>
+             {% if post.demo-link %}
+               <a href="{{post.demo-link}}" target="_blank">
+                 <img src="{{ post.image }}" />
+               </a>
+             {% else %}
+               <a href="{{post.url}}">
+                 <img src="{{ post.image }}" />
+               </a>
+             {% endif %}
            </div>
            <div class="description">
              <h3>
