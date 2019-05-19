@@ -99,8 +99,7 @@ $header-bg:           theme-color('dark');
 $link-color:          theme-color("primary");
 $link-hover-color:    darken($link-color, 15%);
 
-$code-color: theme-color('light') !important;
-$code-bg: darken(theme-color('primary'), 15%);
+$code-bg: darken(theme-color('dark'), 15%);
 
 $footer-color: theme-color('light');
 $footer-bg: theme-color('darker');
@@ -138,10 +137,6 @@ header{
 
 main{
   background-color: $main-bg;
-}
-
-code{
-  background-color: $code-bg;
 }
 
 footer{

@@ -6,9 +6,11 @@
 @import 'abstracts/functions';
 @import 'abstracts/mixins';
 @import 'abstracts/colors';
+@import 'abstracts/syntax-highlighting';
 
 //Import The rest of Boostrap parts
 @import 'vendors/bootstrap_custom';
+
 
 //BASE
 @import 'base/typography';

@@ -17,6 +17,7 @@ google_analytics:
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
 theme: simple-jekyll-theme
 
 # --------------------------------------------------------
