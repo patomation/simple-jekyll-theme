@@ -5,22 +5,42 @@ layout: default
 {{ content }}
 
 {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <h1 class="post-list-heading">{{ page.title | default: "Posts" }}</h1>
     <ul class="post-list">
+      <hr />
+
       {%- for post in site.posts -%}
-      <li class="post-item">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
+        {% if post.path contains 'projects' %}
+        {% else %}
+          <li class="post-item row">
+
+            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+
+            <div class="col-12 col-md-5">
+              <span class="post-meta">{{ post.date | date: date_format }}</span>
+              <h2 class="post-title">
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                  {{ post.title | escape }}<span class="post-dot">.</span>
+                </a>
+              </h2>
+            </div>
+
+
+            <div class="col-12 col-md-6 post-exerpt">
+              {%- if site.show_excerpts -%}
+                {{ post.excerpt | truncatewords: 28 }}
+              {%- endif -%}
+            </div>
+
+            <div class="col-md-1 post-icon">
+              <i class="fas fa-marker"></i>
+            </div>
+
+          </li>
+          <hr />
+        {% endif %}
       {%- endfor -%}
+
     </ul>
 
 

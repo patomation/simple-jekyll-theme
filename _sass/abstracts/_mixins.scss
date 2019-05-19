@@ -19,3 +19,12 @@
   $blur-radius: 1rem;
   filter: drop-shadow($offset-x $offset-y $blur-radius $color);
 }
+
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

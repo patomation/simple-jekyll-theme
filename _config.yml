@@ -12,7 +12,7 @@ twitter_username:
 github_username:
 
 google_analytics:
-
+show_excerpts: true;
 
 
 # Build settings
