@@ -1,9 +1,14 @@
 header {
     text-align: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+}
+header p{
+  padding-left: 0;
+  max-width: 75%;
+  margin: 0 auto;
 }
 
 .home-header{
