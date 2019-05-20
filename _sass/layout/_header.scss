@@ -1,25 +1,32 @@
 header {
     text-align: center;
-    height: 100%;
-    padding: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
-header span {
+.home-header{
+  height: 100%;
+  padding: 2rem;
+}
+
+.home-header span {
   display: block;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
-header span img{
+.home-header span img{
   margin-bottom: 2rem;
 }
 
-header span h1{
+.home-header span h1{
   padding-bottom: 1rem;
 
 }
 
-header span p{
+.home-header span p{
 
 }

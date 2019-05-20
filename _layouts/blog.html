@@ -23,6 +23,7 @@ layout: default
                   {{ post.title | escape }}<span class="post-dot">.</span>
                 </a>
               </h2>
+
             </div>
 
 
@@ -30,6 +31,11 @@ layout: default
               {%- if site.show_excerpts -%}
                 {{ post.excerpt | truncatewords: 28 }}
               {%- endif -%}
+              <div>
+                {% for tag in post.tags %}
+                   <span class="tag">{{ tag }}</span>
+                {% endfor %}
+              </div>
             </div>
 
             <div class="col-md-1 post-icon">

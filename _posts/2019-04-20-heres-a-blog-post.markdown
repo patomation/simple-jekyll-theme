@@ -3,6 +3,8 @@ layout: post
 title:  "Heres a blog post"
 date:   2019-04-20 00:05:31 +0700
 categories: category1
+tags: [html, css, js, react, sass]
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at nisl eleifend, malesuada quam ullamcorper, vulputate mi. Vestibulum tristique dui dolor, sed ultricies enim sollicitudin in. Vivamus rhoncus sit amet lacus vitae placerat. Pellentesque sodales laoreet est, at laoreet lectus varius non. Phasellus eget placerat orci, vehicula aliquam tortor. Curabitur laoreet leo quis facilisis maximus. Mauris finibus hendrerit semper. Suspendisse et pellentesque odio. Aenean cursus velit quis erat vestibulum bibendum. Aliquam erat volutpat. Nulla facilisi. Sed vel lectus quis felis porta suscipit.

@@ -24,8 +24,8 @@
                </a>
              </h3>
              <p>{{ post.description }}</p>
-             {% for category in post.categories %}
-                <span class="category">{{ category }}</span>
+             {% for tag in post.tags %}
+                <span class="tag">{{ tag }}</span>
              {% endfor %}
            </div>
          </div>
