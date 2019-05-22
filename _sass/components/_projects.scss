@@ -1,18 +1,15 @@
 .projects{
 
 }
-.project {
-  padding-bottom: 1rem;
-}
+
 .project .image a img{
   border-radius: 1rem;
   width: 100%;
   border: 0.10rem solid $border-color;
-  @include drop-shadow($shadow-color);
+  // @include drop-shadow($shadow-color);
 }
 
 .project .description{
   padding-top: 1rem;
   padding-bottom: 1rem;
-  text-align: center;
 }

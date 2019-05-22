@@ -1,5 +1,7 @@
 ---
-layout: home
+layout: default
+title: All The Markdown Examples
+description: Everything you wanted to know about markdown but were afraid to ask
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
@@ -21,6 +23,14 @@ This is a normal paragraph following a header. GitHub is a code hosting platform
 > When something is important enough, you do it even if the odds are not in your favor.
 
 ### Header 3
+```scss
+$color6:        color('brand-lavender-gray');
+$error-color:   color('brand-purple');
+$error-bg:      darken(color('brand-purple'), 50%);
+.highlighter-rouge {
+  color: color('brand-purple')
+}
+```
 
 ```js
 // Javascript code with syntax highlighting.
