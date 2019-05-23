@@ -1,0 +1,6 @@
+.header-description{
+  @include media-breakpoint-up(md){
+      width: 50%;
+      margin: 1rem auto;
+  }
+}

@@ -1,6 +1,8 @@
 a {
   background-color: element-color('link-bg');
   color: element-color('link-color');
+  transition: color 250ms ease-in-out,
+           transform 150ms ease;
 }
 
 a:hover{

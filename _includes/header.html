@@ -6,6 +6,35 @@
       </div>
     {% endif %}
     <h1>{{ page.title }}</h1>
-    <p style={margin: 0}>{{ page.description }}</p>
+    <div class="header-description">
+      <p>{{ page.description }}</p>
+    </div>
+    {% if page.demo-link %}
+    <div class="header-link">
+      <a href="{{page.demo-link}}" target="blank">
+        <h2>
+          <i class="fas fa-laptop"></i>
+          Demo
+        </h2>
+      </a>
+    </div>
+    {% endif %}
+
+    {% if page.repo-link %}
+    <div class="header-link">
+      <a href="{{page.repo-link}}" target="blank">
+        <h2>
+          <i class="fab fa-github"></i>
+          Code
+        </h2>
+      </a>
+    </div>
+    {% endif %}
+
   </div>
 </header>
+{% if page.image %}
+<div class="hero-image">
+  <image src="{{page.image}}" />
+</div>
+{% endif %}

@@ -41,8 +41,8 @@ $colors: (
   'background'   : hsl(0, 0%, 100%),
   'text'         : darken($brand-purple, 80%),
   'action'       : $brand-purple,
-  'focus'        : $brand-purple,
-  'link'         : $brand-purple,
+  'focus'        : $yellow,
+  'link'         : $magenta,
   'hover'        : $brand-lavender,
   'light'        : #ffffff,
   'dark'         : $brand-black,
@@ -67,9 +67,9 @@ $element-colors: (
   'heading-color'       : color('blue'),
   'li-color'            : color('magenta'),
 
-  'link-color'          : color('brand-purple'),
+  'link-color'          : color('link'),
   'link-bg'             : color('none'),
-  'link-hover-color'    : color('brand-lavender'),
+  'link-hover-color'    : color('focus'),
   'link-hover-bg'       : color('none'),
 
   'code-bg'             : color('background'),
