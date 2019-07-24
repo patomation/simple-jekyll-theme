@@ -1,0 +1,26 @@
+.c-nav{
+  background-color: color('brand-black');
+  text-align: right;
+  padding: 0.5rem;
+  padding-top: 1rem;
+  
+}
+.c-nav ul{
+  margin: 0;
+  list-style: none;
+}
+.c-nav li{
+  display: inline-block;
+}
+.c-nav a{
+  line-height: 0;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+.c-nav a:hover{
+  background-color: $magenta;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+}

@@ -1,17 +1,17 @@
-<nav class="navbar navbar-dark navbar-expand-lg sticky-top">
-  <a class="navbar-brand" href="/">{{ site.brand }}</a>
+{% if site.nav %}
+<nav class="c-nav">
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <ul class="">
+    {% for item in site.nav %}
+      <li class="">
 
-  <div class="collapse navbar-collapse" id="navbarToggle">
-    <ul class="navbar-nav ml-auto">
-      {% for item in site.nav %}
-        <li class="nav-item">
-          <a class="nav-link" href="{{ item.url }}">{{ item.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
+        <a class="" href="{{ item.url }}">
+          {{ item.title }}
+        </a>
+
+      </li>
+    {% endfor %}
+  </ul>
+
 </nav>
+{% endif %}
