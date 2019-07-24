@@ -4,8 +4,9 @@
   "description": "A simple jekyll theme",
   "main": "index.js",
   "scripts": {
-    "start": "bundle exec jekyll serve",
-    "setup": "bundle install",
+    "start": "npm run watch",
+    "jekyll-server": "bundle exec jekyll serve",
+    "watch": "nodemon --watch ./_config.yml -x \"npm run jekyll-server\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/patomation/simple-jekyll-theme/issues"
   },
-  "homepage": "https://github.com/patomation/simple-jekyll-theme#readme"
+  "homepage": "https://github.com/patomation/simple-jekyll-theme#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
 }
