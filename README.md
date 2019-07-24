@@ -1,7 +1,21 @@
 # simple-jekyll-theme
 
+## Development Getting Started
+1. Install Ruby Gems
+2. Install jekyll and bundler
+```
+gem install jekyll bundler
+```
+3. Start Local Jekyll server
+```
+bundle exec jekyll serve
+```
+or npm start when executes the above command line arguments
+```
+npm start
+```
 
-## TO UE AS A Remote Theme :
+## TO USE AS A Remote Theme :
 [Remote Theme Plugin](#)
 
 Add this line to your Jekyll site's `_config.yml`:
@@ -42,8 +56,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install simple-jekyll-theme
-
-## Usage
 
 
 
